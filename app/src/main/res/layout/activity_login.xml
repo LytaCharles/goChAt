@@ -30,7 +30,6 @@
               android:textColor="@color/colorPrimaryDark"
               android:textSize="20dp"
               android:textAlignment="textStart"
-
               android:text="SIGN IN"
               android:textStyle="bold"/>
 
@@ -53,6 +52,7 @@
               android:textColorHint="@color/colorAccent"
               android:layout_gravity="start"
               android:gravity="start"
+              android:inputType="textEmailAddress"
               android:hint="Enter email"/>
 
           <EditText
@@ -63,6 +63,7 @@
               android:layout_marginTop="30dp"
               android:textColorHint="@color/colorAccent"
               android:gravity="start"
+              android:inputType="textPassword"
               android:hint="Enter password"/>
 
       </LinearLayout>
@@ -75,6 +76,7 @@
           android:orientation="vertical">
 
           <Button
+              android:id="@+id/btn_login"
               android:layout_width="280dp"
               android:layout_height="wrap_content"
               android:background="@color/colorPrimaryDark"

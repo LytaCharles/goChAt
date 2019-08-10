@@ -10,4 +10,28 @@
         layout="@layout/app_bar_layout"
         android:id="@+id/main_page_toolbar"/>
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/mainTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_page_toolbar"
+        android:background="@color/colorToolBarbcg"
+        android:minHeight="?attr/actionBarSize"
+        app:tabTextColor="#fff">
+
+    </com.google.android.material.tabs.TabLayout>
+    
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@id/mainTabs"
+        android:id="@+id/main_tabs_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+
+
+
 </RelativeLayout>
